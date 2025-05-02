@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+        <!-- daisyui cdn -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@5"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+      <!-- tailwind cdn  -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main >
+        <header class="sticky top-0 z-50 bg-[#F9F7F3]/20 backdrop-blur shadow-md">
+            <!-- navbar start  -->
+            <nav>
+              <div class="navbar shadow-md lg:h-28 px-5 lg:px-40 ">
+                <div class="navbar-start">
+                  <a class="btn lg:btn-lg bg-[#B4F461]">Blog</a>
+                </div>
+                <div class="navbar-center lg:text-2xl font-bold ">
+                  <h1 class="md:flex items-center"><span><img class="md:w-2/3 w-1/5 mx-auto" src="./assets/logo.png" alt=""></span> <a href="./index.html">Donate Bangladesh</a></h1>
+                </div>
+                <div class="navbar-end">
+                  <p id="main-balance" class="md:text-2xl font-bold mr-1">5500</p>  <span class="md:text-2xl font-bold">BDT</span>
+                </div>
+              </div>
+            </nav>
+          </header>
+<section class="lg:my-20 mt-8 px-5 lg:px-80 ">
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title md:text-2xl font-semibold">What is the DOM?</div>
+        <div class="collapse-content text-sm md:text-[20px]">The Document Object Model (DOM) is a programming interface that allows developers to interact with and manipulate HTML and XML documents. It represents the document as a structured tree of nodes, where each node corresponds to a part of the document (like elements, attributes, or text).</div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title md:text-2xl font-semibold">How can you access elements in the DOM using JavaScript?</div>
+        <div class="collapse-content text-sm md:text-[20px]">You can access DOM elements in JavaScript using various built-in methods provided by the document object. The most common methods include getElementById to select an element by its ID, getElementsByClassName to retrieve all elements with a specific class name, and getElementsByTagName to get elements by tag name like <div> or <p>. More modern and flexible methods are querySelector, which selects the first element that matches a CSS selector, and querySelectorAll, which returns all matching elements as a NodeList.</div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title md:text-2xl font-semibold">Explain the differences between getElementById, getElementsByClassName, and getElementsByTagName.</div>
+        <div class="collapse-content text-sm md:text-[20px]">getElementById returns a single element that matches the provided ID and is the fastest method for accessing an element. It is ideal when working with a unique element on a page. getElementsByClassName returns a live HTMLCollection of all elements with the specified class. This means it updates automatically if the DOM changes. getElementsByTagName also returns a live collection, but it targets all elements with a specific tag, like "div" or "li". Both of these return collections and require iteration if you want to manipulate each element individually.</div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300 mb-5">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title md:text-2xl font-semibold">What is the DOM?How do you stop event propagation in the DOM?</div>
+        <div class="collapse-content text-sm md:text-[20px]">To prevent an event from bubbling up the DOM tree, you can use the stopPropagation() method inside the event handler. This tells the browser to stop the event from being passed to ancestor elements. There is also stopImmediatePropagation(), which stops the event from calling any other listeners on the same element.</div>
+      </div>
+      
+</section>
+    </main>
+</body>
+</html>
